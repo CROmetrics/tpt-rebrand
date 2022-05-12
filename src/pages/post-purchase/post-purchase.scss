@@ -1,0 +1,371 @@
+.#{$TAG}-post-purchase {
+  .OrderReceiptPageLayout__title {
+    font-family: 'Graphik';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #222222;
+  }
+  .OrderReceiptPageLayout__thankYou {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #767676;
+    a {
+      color: #3b81fd !important;
+    }
+  }
+  .OrderReceiptPageLayout__footer {
+    .SalesTaxMessaging--responsive {
+      border-top: none;
+      font-size: 14px;
+      font-family: 'Graphik';
+    }
+    a {
+      color: #3b81fd;
+    }
+  }
+  .DialogModal__body {
+    .Button:not([data-testid="easel-import-button"]) {
+      color: #173e3e;
+      background-color: #67e0a6;
+      border-radius: 999px;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #42CD8A !important;
+      }
+
+      &:active {
+        background-color: #3FBC88 !important;
+      }
+    }
+  }
+
+  .#{$TAG}-post-purchase {
+    &-header {
+      font-family: 'Tiempos';
+      font-size: 39px !important;
+      font-weight: 500 !important;
+      color: #222222;
+      line-height: 55px;
+    }
+    &-cart {
+      font-family: 'Graphik';
+      .tpt-frontend {
+        .responsive .container {
+          max-width: 1290px;
+        }
+        .OrderItemProductRow__price,
+        .OrderItemProductRow__licenseCount,
+        .OrderReceiptPageLayout__digitalEducation {
+          display: none;
+        }
+      }
+    }
+    &-products {
+      max-width: 809px;
+      padding: 0 !important;
+      // flex: 0 0 68.66667% !important;
+      .ResponsiveProductImage {
+        img {
+          @media (min-width: 1230px) {
+            width: 216px;
+            height: 216px;
+          }
+          border-radius: 8px;
+        }
+      }
+      .ProductRowTitleBespoke {
+        h2 {
+          a {
+            font-family: 'Graphik';
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #222222;
+            line-height: 30px;
+          }
+        }
+      }
+      .ProductRowStoreBespoke {
+        font-family: 'Graphik';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #767676;
+        &:hover{
+          color: #767676;
+        }
+        &__avatar {
+          margin-right: 0;
+        }
+        .Avatar__img {
+          width: 24px;
+          height: 24px;
+        }
+        .ProductRowStoreBespoke__storeName {
+          display: contents;
+          > a {
+            color: #3b81fd;
+          }
+        }
+      }
+      .OrderItemProductRow__description {
+        font-family: 'Graphik';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #222222;
+      }
+      .OrderItemProductRow,
+      .OrderItemProductRow__downloadButton {
+        .Button {
+          font-family: 'Graphik';
+          color: #173e3e;
+          background-color: #67e0a6;
+          border-radius: 999px;
+          font-weight: 600;
+          max-width: 200px;
+          height: 40px;
+
+          &:hover {
+            background-color: #42CD8A;
+          }
+  
+          &:active {
+            background-color: #3FBC88;
+          }
+        }
+      }
+      .OrderItemProductRow {
+        > .row {
+          @media (min-width: 1230px) {
+            gap: 32px;
+          }
+          > .col-xs-3 {
+            @media (min-width: 1230px) {
+              max-width: 216px;
+              padding: 0;
+            }
+            > .ProductRowImageBespoke {
+              @media (min-width: 1230px) {
+                width: 216px;
+              }
+            }
+          }
+          .col-xs-9 {
+            > .row {
+              justify-content: space-between;
+            }
+            .col-lg-4{
+              padding: 0;
+            }
+            @media (min-width: 1230px) {
+              .col-lg-8 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 58.33333%;
+                flex: 0 0 58.33333%;
+                max-width: 329px;
+              }
+              .col-lg-4 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 41.66667%;
+                flex: 0 0 41.66667%;
+                padding: 0;
+                max-width: 200px;
+              }
+            }
+          }
+        }
+      }
+  
+      .BundleOrderItemTable {
+        a,
+        .DSButton__text {
+          color: #3b81fd !important;
+          background: none !important;
+          height: auto !important;
+          max-width: none !important;
+          padding: 0;
+          font-size: 14px;
+          font-weight: 500 !important;
+          font-family: "Graphik";
+        }
+      }
+    }
+  
+    &-checkout {
+      padding-right: 0;
+      @media(min-width: 980px){
+        flex: 0 0 31.33333% !important;
+        max-width: 353px !important;
+      }
+      .OrderReceiptSummary {
+        font-family: 'Graphik';
+        padding: 24px;
+        border: 1px solid #e9e9e9;
+        border-radius: 4px;
+        &__header {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 140%;
+          margin-bottom: 24px;
+        }
+        &__lineItem {
+          font-family: 'Graphik';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 160%;
+          color: #222;
+          padding-bottom: 16px;
+          justify-content: space-between;
+          &[data-testid='OrderReceiptSummary-subtotal'] {
+            .OrderReceiptSummary__price {
+              color: #767676;
+            }
+          }
+          &[data-testid='OrderReceiptSummary-accountBalance'] {
+            color: #255752;
+            .OrderReceiptSummary__price {
+              color: #255752;
+            }
+          }
+        }
+        .Divider {
+          margin: 0 !important;
+        }
+        &__total {
+          font-family: 'Graphik';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 160%;
+          padding-bottom: 0;
+          padding-top: 24px;
+          &Price {
+            font-family: 'Graphik';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 160%;
+          }
+        }
+      }
+    }
+    &-OrderReceiptSummary__header {
+      font-family: 'Graphik';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140%;
+      color: #222222;
+    }
+  }
+  
+  .#{$TAG}-banner {
+    margin: 20px auto;
+    padding: 22px 30px;
+    border: 3px solid #415294;
+    border-radius: 10px;
+    max-width: 90%;
+  
+    @media screen and (min-width: 768px) {
+      width: 1210px;
+      max-width: calc(100% - 60px);
+    }
+  
+    &-logo {
+      margin-bottom: 16px;
+    }
+  
+    &-logo img {
+      width: 229px;
+      height: auto;
+    }
+  
+    &-content {
+      font-family: 'Proxima Nova', sans-serif;
+  
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
+  
+    &-text {
+      // margin-bottom: 20px;
+      // color: #1D1C4C;
+      font-size: 20px;
+      // font-weight: 600;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 31px;
+  
+      color: #1D1C4C;
+  
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        font-size: 31px;
+      }
+    }
+  
+    &-cta {
+      a {
+        display: block;
+        width: fit-content;
+      }
+  
+      @media screen and (min-width: 768px) {
+        margin-left: 10px;
+      }
+    }
+  
+    &-button {
+      white-space: nowrap;
+      background: #415294;
+      color: #fff !important;
+      font-size: 14px;
+      
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 4px;
+  
+      @media screen and (min-width: 768px) {
+        font-size: 21px;
+      }
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+  
+  [data-testid="easel-import-button"] {
+    background: none !important;
+    height: auto !important;
+    color: #3B81FD !important;
+    font-weight: 400 !important;
+
+    &:hover {
+      background-color: transparent !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  //hiding hard coded stuff
+  .tpt758-banner, .tpt1167-banner, .tpt1167-hidden, .PostPurchaseTpTSABannerLayout{
+    display: none;
+  }
+
+  .OrderItemProductRow .BundleOrderItemTable {
+    a, button {
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+}

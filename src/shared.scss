@@ -1,0 +1,19 @@
+@import "./pages/global/header/header";
+@import "./pages/global/footer/footer";
+@import "./pages/homepage/homepage";
+@import "./pages/cart/cart";
+@import "./pages/checkout/checkout";
+@import "./pages/pdp/pdp";
+@import "./pages/post-purchase/post-purchase";
+@import "./pages/atc-modal/atc-modal";
+@import "./pages/search-browse/search-browse";
+
+.#{$TAG} {
+  &-hidden {
+    display: none !important;
+  }
+
+  &-invisible {
+    visibility: hidden !important;
+  }
+}

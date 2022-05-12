@@ -1,0 +1,156 @@
+{
+  "id": 21217492731,
+  "campaign_id": 21220603543,
+  "name": "[TEST COOKIE] TPT-1134 [Rebrand #3] Multi-Page Re-skin",
+  "tag": "tpt1134",
+  "variations": [
+    {
+      "id": 21227903480,
+      "name": "Control",
+      "tag": "v0",
+      "meta": {
+        "actions": [
+          {
+            "changes": [],
+            "page_id": 14334900114
+          }
+        ],
+        "archived": false,
+        "status": "active",
+        "weight": 3333
+      }
+    },
+    {
+      "id": 21218261865,
+      "name": "Test 2 (1069) Iteration",
+      "tag": "v1",
+      "meta": {
+        "actions": [
+          {
+            "changes": [],
+            "page_id": 14334900114
+          }
+        ],
+        "archived": false,
+        "status": "active",
+        "weight": 3333
+      }
+    },
+    {
+      "id": 21259361040,
+      "name": "Reskin",
+      "tag": "v2",
+      "meta": {
+        "actions": [
+          {
+            "changes": [],
+            "page_id": 14334900114
+          }
+        ],
+        "archived": false,
+        "status": "active",
+        "weight": 3334
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": 14334900114,
+      "name": "Sitewide",
+      "tag": "entire-site-global-nav",
+      "edit_url": "https://www.teacherspayteachers.com/"
+    }
+  ],
+  "goals": [
+    {
+      "id": 13376720384,
+      "name": "[Mobile] Clicked Checkout",
+      "meta": {
+        "aggregator": "unique",
+        "scope": "visitor",
+        "winning_direction": "increasing"
+      }
+    },
+    {
+      "id": 11912410137,
+      "name": "/Cart",
+      "meta": {
+        "aggregator": "unique",
+        "scope": "visitor",
+        "winning_direction": "increasing"
+      }
+    },
+    {
+      "id": 11883580377,
+      "name": "Cart | Clicked Secure Checkout",
+      "meta": {
+        "aggregator": "unique",
+        "scope": "visitor",
+        "winning_direction": "increasing"
+      }
+    },
+    {
+      "id": 16859474945,
+      "name": "Cart | Clicked Use a gift card",
+      "meta": {
+        "aggregator": "unique",
+        "scope": "visitor",
+        "winning_direction": "increasing"
+      }
+    },
+    {
+      "id": 16889303011,
+      "name": "Cart | Clicked Use a promo code",
+      "meta": {
+        "aggregator": "unique",
+        "scope": "visitor",
+        "winning_direction": "increasing"
+      }
+    },
+    {
+      "id": 13788880241,
+      "name": "Cart | Click on Bundle Upsell",
+      "meta": {
+        "aggregator": "unique",
+        "scope": "visitor",
+        "winning_direction": "increasing"
+      }
+    },
+    {
+      "id": 11932979442,
+      "name": "Submit Order",
+      "meta": {
+        "aggregator": "unique",
+        "scope": "visitor",
+        "winning_direction": "increasing"
+      }
+    }
+  ],
+  "audiences": [
+    {
+      "id": 16539970090,
+      "name": "U.S. Only"
+    },
+    {
+      "id": 12001380907,
+      "name": "Device | Desktop"
+    },
+    {
+      "id": 20872913900,
+      "name": "Exclude TpT Internal Admins"
+    },
+    {
+      "id": 16882670147,
+      "name": "Exclude Premium Sellers"
+    }
+  ],
+  "gist": {
+    "joshua.sperry@crometrics.com": {
+      "pack": {
+        "url": "https://gist.github.com/4d3c5cbcc575e5f796843dec6c260804",
+        "last_modified": "2022-05-12T16:48:48.126Z"
+      }
+    }
+  },
+  "winning_variation": 2
+}

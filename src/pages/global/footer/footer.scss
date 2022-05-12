@@ -1,0 +1,137 @@
+.#{$TAG} .tpt-frontend .FooterLayout.#{$TAG}-global-footer {
+  padding: 64px 0 96px !important;
+  background-color: #173E3E;
+
+  > .container, > .responsive > .container {
+    width: 1096px;
+    padding: 0;
+  }
+
+  .FooterLayout__leftContainer {
+    max-width: 410px;
+
+    p.FooterLayout__text {
+      font-weight: 400;
+      max-width: none !important;
+      line-height: 137.5%;
+    }
+
+    > .Box {
+      margin-bottom: 16px !important;
+    }
+
+    > p {
+      margin-bottom: 8px !important;
+    }
+
+    a {
+      line-height: 137.5%;
+    }
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+
+  [class*='col'], .row {
+    padding: 0;
+    margin: 0;
+  }
+
+  [class*="SocialRow-module__container"] {
+    margin: 16px 0 0 !important;
+
+    > div {
+      margin-right: 24px !important;
+
+      > a {
+        width: auto !important;
+      }
+    }
+  }
+
+  [class*='FooterLayout'] + div {
+    width: auto;
+
+    .row {
+      margin: 0 0 0 40px;
+
+      > [class*='col'] {
+        flex-grow: 0;
+        width: auto;
+        padding: 0;
+        margin: 0 40px 0 0;
+
+        &:nth-child(1) > div{
+          width: 123px;
+        }
+
+        &:nth-child(2) > div {
+          width: 201px;
+        }
+
+        &:nth-child(3) {
+          flex-grow: 1;
+          margin: 0;
+
+          > div {
+            max-width: 235px;
+          }
+        }
+      }
+    }
+  }
+
+  a[class*='Social-module__item'] {
+    background-color: transparent !important;
+  }
+
+  p, h4, a {
+    font-family: "Graphik";
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 137.5%;
+  }
+
+  h4, a.Anchor--green {
+    font-weight: 600;
+  }
+
+  h4 {
+    margin: 0 0 16px;
+  }
+
+  a.Anchor--green {
+    color: #67E0A6;
+  }
+
+  .FooterLayout__list li, .FooterLayout__newsletter {
+    margin-bottom: 8px;
+  }
+
+  .FooterLayout__newsletter {
+    width: 242px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    > .responsive > .container > .row {
+      max-width: fit-content;
+      margin: auto;
+
+      > .FooterLayout__leftContainer {
+        max-width: 205px;
+      }
+    }
+  }
+}
+
+body.#{$TAG}-php-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .legacy-content {
+    flex-grow: 1;
+  }
+}

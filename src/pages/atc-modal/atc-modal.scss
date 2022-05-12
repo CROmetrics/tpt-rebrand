@@ -1,0 +1,259 @@
+// Override Dialog specific styles
+.tpt-frontend.cro__atc-modal .ReactModal__Overlay {
+  z-index: 305 !important;
+
+  .DialogModal {
+    &__content--small {
+      max-width: 664px;
+    }
+
+    &__closeButton {
+      top: 32px;
+      right: 32px;
+
+      &:before {
+        color: #898AAD;
+        font-size: 32px;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        line-height: 32px;
+      }
+    }
+
+    &__header {
+      margin-bottom: 22px;
+      font-size: 20px;
+      font-family: Graphik, 'Proxima Nova', sans-serif;
+      font-weight: 600;
+    }
+
+    &__body {
+      border-radius: 8px;
+      padding: 32px;
+    }
+
+    &__buttonPair {
+      margin: 0;
+      padding-top: 25px;
+      border-top: 1px solid #ddd;
+    }
+
+    &__buttonPair > div {
+      @media screen and (min-width: 580px) {
+        // flex-flow: row-reverse;
+        // Needed to override different styles on PDP and /Browse pages
+        justify-content: flex-start !important;
+      }
+    }
+
+    &__buttonPair button {
+      font-family: Graphik, 'Proxima Nova', sans-serif !important;
+      font-weight: 600 !important;
+      font-size: 16px !important;
+      // Needed to override different styles on PDP and /Browse pages
+      padding: 7px 24px !important;
+      min-height: 40px !important;
+    }
+
+    &__buttonPair [data-testid="DialogModal__acceptButton"] button {
+      background-color: #67E0A6 !important;
+      color: #173E3E !important;
+      border: 1px solid #67E0A6;
+      border-radius: 50px;
+
+      &:hover,
+      &:focus {
+        background-color: #42CD8A !important;
+      }
+    }
+    &__buttonPair [data-testid="DialogModal__declineButton"] button {
+      border: 1px solid rgba(0, 0, 0, 0.09) !important;
+      border-radius: 50px;
+      color: #222 !important;
+
+      @media screen and (min-width: 580px) {
+        margin-right: 8px !important;
+      }
+    }
+
+
+    // Easel Activity instructions in footer. No ATC specific classes available to scope this like below
+    &__footer {
+      .DigitalActivityEducationInstructions {
+        padding: 32px 0 0;
+        font-family: Graphik, 'Promixa Nova', sans-serif;
+
+        .EaselNewBadge {
+          display: none;
+        }
+
+        &__heading {
+          display: block;
+          margin-bottom: 16px;
+          margin-left: 0;
+          font-size: 20px;
+        }
+
+        &__subheading {
+          margin-bottom: 8px;
+          padding: 0;
+        }
+
+        &__instruction {
+          margin: 0 0 8px 0;
+          font-size: 16px;
+
+          &:before {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ATC specific styles
+.tpt-frontend.cro__atc-modal .AddToCartModalLayout {
+  &__headerIcon {
+    color: #5DD89D;
+  }
+
+  &__content {
+    border-top: 1px solid #ddd;
+    font-family: Graphik, 'Proxima Nova', sans-serif;
+    padding: 32px 0;
+  }
+
+  &__footer {
+    margin: 0;
+    padding: 32px 0 0;
+  }
+
+  &__productImageContainer {
+    @media screen and (min-width: 600px) {
+      .ProductRowImageBespoke {
+        width: 216px;
+      }
+
+      .ProductImage--productRowSize {
+        max-height: 216px;
+        height: 216px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__productName {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #080D36;
+    line-height: 1.2;
+  }
+
+  &__productInfo {
+    .ProductRowStoreBespoke {
+      display: flex;
+      flex-wrap: wrap;
+      color: #767676;
+      margin-bottom: 9px;
+
+      &__storeName .Anchor {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3B81FD;
+      }
+    }
+    .Avatar {
+      margin: 0 8px;
+    }
+    .Avatar__img--small {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__productPrice {
+    display: flex;
+    flex-direction: column;
+
+    .cro__listPrice {
+      margin-bottom: 4px;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 400;
+      text-decoration: line-through;
+      color: #767676;
+    }
+
+    span > span {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  // Bundles in footer
+  &__footer .ParentBundlesPrefab {
+    margin: 0;
+    font-family: Graphik, 'Proxima Nova', sans-serif;
+  }
+
+  &__footer .Heading {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  &__footer .BundledResourceCardPrefab {
+
+    &__imageContainer {
+      min-width: 110px;
+    }
+
+    &__details__title {
+      margin-bottom: 4px;
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 600;
+    }
+
+    &__details__description {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    &__details--metadata--count,
+    &__details--metadata--label {
+      font-size: 12px;
+      line-height: 18px;
+      color: #666;
+    }
+
+    &__price {
+      font-size: 16px;
+      line-height: 24px;
+
+      .BundleResourcePrice__discountPrice,
+      .BundleResourcePrice__listPrice {
+        margin-bottom: 4px;
+      }
+
+      .BundleResourcePrice__discountPrice,
+      .BundleResourcePrice__saveAmount {
+        font-weight: 600;
+      }
+
+      .BundleResourcePrice__listPrice {
+        color: #767676;
+        font-weight: 400;
+      }
+
+      .BundleResourcePrice__saveAmount {
+        color: #ED3724;
+      }
+    }
+  }
+}

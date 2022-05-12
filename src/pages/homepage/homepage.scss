@@ -1,0 +1,297 @@
+.#{$TAG}-homepage {
+  overflow-x: hidden;
+
+  *:not(.tpticon) {
+    font-family: "Graphik" !important;
+  }
+
+  .tpt-frontend .HomePage {
+    .row, [class*="col"], .Carousel {
+      padding: 0;
+      border: none;
+      margin: 0;
+    }
+  }
+
+  .Carousel {
+    .CarouselArrow {
+      top: -40px !important;
+    }
+
+    .Dot.Dot--green {
+      background-color: #5DD89D;
+    }
+  }
+
+  .CardRowLayout__footerLink {
+    margin: 0;
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 34px;
+      color: #3B81FD !important;
+
+      svg {
+        margin: 0 0 2px 18px;
+      }
+    }
+  }
+
+  .CardRowLayout {
+    .CardRowLayout__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-family: "Graphik" !important;
+        color: #222222 !important;
+        font-size: 28px !important;
+        line-height: 32px !important;
+        margin: 0 !important;
+      }
+
+      .Box {
+        margin: 0;
+      }
+    }
+
+    .CardRowLayout__title .Box p, .CardRowLayout__subheader {
+      margin: 0;
+      font-size: 16px;
+      line-height: 137.5%;
+      letter-spacing: 0.01em;
+      color: #000000;
+    }
+
+    .CardRowLayout__body {
+      margin-top: 24px;
+
+      > .row > div, .slick-slide {
+        padding: 0 0 24px;
+
+        + div:not(:nth-child(5)) {
+          padding-left: 24px;
+        }
+      }
+
+      a {
+        border: none;
+        border-radius: 0;
+      }
+
+      .ProductCard__productImageSection, [data-testid="product-image"] {
+        position: relative;
+        background-color: #EDEDED;
+        border-radius: 8px;
+      }
+
+      .ProductCard__productImageSection::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: linear-gradient(to top, rgba(80, 80, 80, 0.3) 3.76%, transparent 48.85%);
+        transition: opacity 0.15s ease;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .ProductCard:hover .ProductCard__productImageSection::after {
+        opacity: 0;
+      }
+
+      .ProductCard__productInfo {
+        padding: 8px 4px;
+
+        .TruncatedTextBox {
+          color: #323232 !important;
+          min-height: 2.5em !important;
+          height: 2.5em !important;
+          font-size: 18px !important;
+          line-height: 120% !important;
+          font-weight: 400 !important;
+          margin: 0;
+
+          &:hover {
+            text-decoration: underline !important;
+          }
+        }
+
+        .ProductCardPrice {
+          margin: 8px 0;
+
+          span {
+            color: #323232;
+            font-size: 16px;
+            line-height: 140%;
+            font-weight: 500;
+          }
+        }
+
+        .ProductCardRating {
+          margin: 0;
+
+          .Rating {
+            margin-right: 8px;
+          }
+
+          .EvaluationStarRating__wrapper__categoryWrap {
+            color: #666666;
+            font-size: 14px;
+            line-height: 150%;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .ProductCardAuthorFooter {
+        padding: 0px 4px 8px;
+        border: none;
+
+        .ProductCardAuthorFooter__avatar {
+          margin-right: 8px;
+        }
+
+        [data-testid="ProductCardAuthorFooter__storeName"] {
+          color: #222222;
+          font-size: 14px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+
+  .tpt-frontend .CardTimeAgo {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #777777;
+    text-align: left;
+    padding: 0;
+  }
+
+  .#{$TAG}-module {
+    &-top {
+      position: relative;
+      z-index: 1;
+      margin: 40px 0 64px !important;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: #FFF6E4;
+        top: -64px;
+        left: -100vw;
+        width: 200vw;
+        height: calc(100% + 64px);
+        z-index: -1;
+      }
+    }
+
+    &-middle {
+      margin: 48px 0 !important;
+    }
+
+    &-bottom {
+      margin: 64px 0 !important;
+
+      &-header {
+        font-family: "Tiempos" !important;
+      }
+    }
+  }
+
+  .LoggedOutHomePageLayout {
+    // .CardRowLayout, .CardRowLayout ~ [class*="tpt1134-module"] {
+    .CardRowLayout, .CardRowLayout ~ [class*="#{$TAG}-module"] {
+      margin: 0;
+    }
+
+    .ExploreResourcesLayout {
+      margin-bottom: 64px;
+    }
+  }
+
+  .#{$TAG}-signup-module {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #67E0A6;
+    width: 100%;
+    height: 370px;
+
+    &-header {
+      position: relative;
+      margin-bottom: 28px;
+
+      span {
+        display: block;
+        color: #323232;
+        font-family: "Tiempos" !important;
+        font-size: 60px;
+        line-height: 68px;
+        text-align: center;
+        max-width: 750px;
+      }
+
+      &-star {
+        position: absolute;
+        fill: transparent;
+        top: 5px;
+        right: -16px;
+      }
+
+      &-arrow {
+        position: absolute;
+        fill: transparent;
+        bottom: 20px;
+        left: -75px;
+      }
+    }
+
+    a {
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      background-color: #222222;
+      border-radius: 999px;
+      padding: 16px 24px;
+    }
+  }
+
+  .ProductCardPrice__lineThrough span > span {
+    color: #AAAAAA !important;
+    font-size: 16px !important;
+    line-height: 137.5% !important;
+    font-weight: 400 !important;
+  }
+
+  .#{$TAG}-module-middle-left-title {
+    font-weight: 400 !important;
+  }
+
+  .EaselEducationHomapageComponent {
+    display: none !important;
+  }
+
+  .DigitalActivityBadge__section > [data-testid="tpt-easel-badge"] {
+    font-weight: 400 !important;
+  }
+
+  [data-testid="easel-activity-badge-with-tooltip"] .Tooltip a {
+    color: #3B81FD !important
+  }
+}
+
+.cro-modal#tpt1063-modal .cro-modal__content {
+  &__copy_top, &__copy_bottom {
+    h2, span, p, button {
+      font-family: "Proxima Nova" !important;
+    }
+  }
+}
